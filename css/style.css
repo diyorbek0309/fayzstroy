@@ -1,3 +1,170 @@
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+    position: fixed;
+}
+
+.loader1 {
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    top: 40%;
+    left: 45%;
+    position: absolute;
+    display: block;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader2 {
+    width: 8%;
+    height: 16%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 42%;
+    left: 46%;
+    position: absolute;
+    display: block;
+    animation-name: aylan;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader3 {
+    width: 4%;
+    height: 8%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    top: 46%;
+    left: 48%;
+    position: absolute;
+    display: block;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader4 {
+    width: 2%;
+    height: 4%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 48%;
+    left: 49%;
+    position: absolute;
+    display: block;
+    animation-name: aylan;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aylan {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .loader1 {
+        width: 15%;
+        height: 12%;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        top: 44%;
+        left: 43%;
+        position: absolute;
+        display: block;
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .loader2 {
+        width: 12%;
+        height: 9%;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        top: 45.5%;
+        left: 44.5%;
+        position: absolute;
+        display: block;
+        animation-name: aylan;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .loader3 {
+        width: 6%;
+        height: 5%;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        top: 47.5%;
+        left: 47%;
+        position: absolute;
+        display: block;
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .loader4 {
+        width: 3%;
+        height: 2.2%;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        top: 49%;
+        left: 48.5%;
+        position: absolute;
+        display: block;
+        animation-name: aylan;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
 #products .wow img {
     border-radius: 5px;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
@@ -164,7 +331,7 @@
 }
 
 #footer {
-    background: #263f49;
+    background: #1a3037;
     padding: 0 0 20px 0;
     color: #fff;
     font-size: 16px;
